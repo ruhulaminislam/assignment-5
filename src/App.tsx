@@ -5,6 +5,7 @@ import { Hero } from './ Hero'
 import type { TechnologiesDataProps } from './TechnologiesData'
 import { Suspense, useState } from 'react'
 import { Technologies } from './Technologies'
+import { FooterSection } from './footerSection'
 
 const TechnologieDataPromic=async():Promise<TechnologiesDataProps[]>=>{
   const rec=await fetch("/data.json")
@@ -20,9 +21,10 @@ const [technologiesData]=useState(()=>TechnologieDataPromic())
     <>
       <Navbar></Navbar>
       <Hero></Hero>
-       <Suspense fallback={<h1>Loding...</h1>}>
+       <Suspense fallback={<h1>Loading...</h1>}>
       <Technologies  technologiesData={technologiesData}></Technologies>
      </Suspense>
+     <FooterSection></FooterSection>
     </>
   )
 }
