@@ -1,18 +1,21 @@
-# assignment-5
-
-
 # 🚀 DevStack
 
 DevStack is a simple web application that helps developers explore different technologies and build their own development stack.
 
+## 🌐 Live Demo
+
+https://kaleidoscopic-unicorn-e5870f.netlify.app/
+
 ## 🛠️ Technologies Used
 
-* React
-* TypeScript
-* Tailwind CSS
-* DaisyUI
-* React Toastify
-* React Icons
+<p>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/DaisyUI-1AD1C0?style=flat-square&logo=daisyui&logoColor=white" alt="DaisyUI" />
+  <img src="https://img.shields.io/badge/React_Toastify-FF4785?style=flat-square" alt="React Toastify" />
+  <img src="https://img.shields.io/badge/React_Icons-E91E63?style=flat-square" alt="React Icons" />
+</p>
 
 ## ✨ Features
 
@@ -28,33 +31,35 @@ Users can remove a technology from their stack with a single click. A toast mess
 
 Users can remove all selected technologies at once by clicking **Remove All**. A toast message confirms the action.
 
-## 📚 React Questions
+## 📦 Dependencies
 
-### 1. What is JSX, and why is it used in React?
+* React
+* TypeScript
+* Tailwind CSS
+* DaisyUI
+* React Toastify
+* React Icons
 
-JSX lets us write HTML-like code inside JavaScript. I used JSX to create the UI of my React components.
+## 🚀 Run Locally
 
-### 2. What is the difference between props and state?
+Clone the repository and install the dependencies:
 
-Props are used to pass data between components. State is used to store and update data inside a component. In my project, I used `cardData` as state and passed `cardData` and `setCardData` as props.
+```bash
+git clone https://github.com/ruhulaminislam/assignment-5.git
+cd assignment-5
+npm install
+npm run dev
+```
 
-### 3. What does the `useState` hook do, and where did you use it in this project?
+Then open the local development server in your browser.
 
-`useState` is used to store and update data in a component. I used it in `App.tsx` to store the data-fetching Promise and in `Technologies.tsx` to store the selected technologies.
+## 📸 Screenshot
 
-### 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
+<p align="center">
+  <img src="./public/screenshot.png" width="100%" alt="DevStack Screenshot" />
+</p>
 
-`useEffect` is used to run code after a component renders. I did not use `useEffect` in this project. I used `async`, `fetch`, Promise, `use()`, and `Suspense` to load the JSON data.
+## 🔗 Relevant Links
 
-### 5. Why does every item in a `.map()` list need a unique `key` prop?
-
-A unique `key` helps React identify each item in a list. In my project, I used `card.id` as the key for each technology.
-
-### 6. What is conditional rendering? Show one place you used it.
-
-Conditional rendering means showing different content based on a condition. I used it in `Stack.tsx` to show **"Your stack is empty."** when no technology is selected. When there are selected technologies, I show the technology list.
-
-### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
-
-A parent passes data to a child through props. In my project, I passed `cardData` and `setCardData` from `Technologies` to `Stack`. The `Stack` component uses `setCardData` to remove one technology or remove all technologies.
-
+* **Live Project:** https://kaleidoscopic-unicorn-e5870f.netlify.app/
+* **GitHub Repository:** https://github.com/ruhulaminislam/assignment-5
