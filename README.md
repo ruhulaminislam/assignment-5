@@ -59,6 +59,9 @@ Then open the local development server in your browser.
   <img src="./public/Screenshot_2026-10-06_02_42_53.png" width="100%" alt="DevStack Screenshot" />
    <img src="./public/Screenshot_2026-10-06_02_43_04.png" width="100%" alt="DevStack Screenshot" />
 </p>
+<p align="center">
+   <img src="./public/Screenshot_2026-10-06_02_43_04.png" width="100%" alt="DevStack Screenshot" />
+</p>
 
 ## 🔗 Relevant Links
 
