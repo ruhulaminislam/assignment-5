@@ -56,7 +56,7 @@ Then open the local development server in your browser.
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="./public/screenshot.png" width="100%" alt="DevStack Screenshot" />
+  <img src="./public/screenshot1.png" width="100%" alt="DevStack Screenshot" />
 </p>
 
 ## 🔗 Relevant Links
